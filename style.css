@@ -1,7 +1,7 @@
 /* Base styles */
 :root {
-  --primary-color: #4caf50; /* Android green */
-  --dark-color: #263238;
+  --primary-color: #4c0051; /* Android green */
+  --dark-color: #b200bb;
   --light-color: #f5f5f5;
   --accent-color: #ff5722; /* Deep orange */
   --text-color: #333;
@@ -234,7 +234,7 @@ button {
 }
 
 button:hover {
-  background-color: #43a047;
+  background-color: #008096;
 }
 
 /* Footer */
