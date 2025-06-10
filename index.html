@@ -3,191 +3,422 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ravi Maurya - Android Developer</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ravi Maurya | Android Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <div class="cursor"></div>
+    <div class="blur-circle-1"></div>
+    <div class="blur-circle-2"></div>
+    
+    <header class="header">
         <div class="container">
-            <img src="res\baby_boss.PNG" alt="Ravi Maurya" class="profile-pic">
-            <h1>Ravi Maurya</h1>
-            <p class="tagline">Android Developer | Java/Kotlin Enthusiast | Mobile App Creator</p>
-            <!-- Add social media icons here if desired -->
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">{"</>"}</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
         </div>
     </header>
-    
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>
-                    Hello! I'm a passionate Android developer with a strong foundation in Java and Kotlin. 
-                    I'm dedicated to creating intuitive, efficient, and beautiful mobile applications.
-                    I am currently final year student of Bachelor of Computer Application(BCA) and am excited to 
-                    bring my skills and enthusiasm to the Android development community.
-                </p>
-                <br>
-                <p>
-                    When I'm not coding, you can find me experimenting with new recipes in the kitchen, catching up on the different genre movies, or exploring interesting corners of the internet. I believe in continuous learning and am always exploring new Android 
-                    libraries and best practices.
-                </p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="/api/placeholder/300/180" alt="Project 1" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Weather App</h3>
-                        <p>A simple yet powerful weather application that provides real-time weather updates using OpenWeatherMap API.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">MVVM</span>
-                            <span class="tech-tag">Retrofit</span>
-                            <span class="tech-tag">Room</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">GitHub</a>
-                            <a href="#" target="_blank">Demo</a>
-                        </div>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h4 class="hero-subtitle">ANDROID DEVELOPER</h4>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-line highlight">Ravi Maurya</span>
+                    </h1>
+                    <p class="hero-description">I build modern Android applications with <span class="highlight">Kotlin</span> and <span class="highlight">Jetpack Compose</span>, crafting beautiful digital experiences that users love.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
                     </div>
                 </div>
-                
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="/api/placeholder/300/180" alt="Project 2" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Note Taking App</h3>
-                        <p>A feature-rich note-taking application with cloud sync capability and markdown support.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Material Design</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">GitHub</a>
-                            <a href="#" target="_blank">Download APK</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <img src="/api/placeholder/300/180" alt="Project 3" class="project-img">
-                    <div class="project-content">
-                        <h3 class="project-title">Fitness Tracker</h3>
-                        <p>An app that helps users track their workouts, set goals, and monitor their progress over time.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Kotlin</span>
-                            <span class="tech-tag">HealthConnect API</span>
-                            <span class="tech-tag">Jetpack Compose</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank">GitHub</a>
-                            <a href="#" target="_blank">Play Store</a>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="res\baby-boss-removebg-preview.png" alt="Your Photo" class="profile-img">
+                        <div class="tech-stack">
+                            <div class="tech-item" data-tooltip="Kotlin">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                            </div>
+                            <div class="tech-item" data-tooltip="Android">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
+                            </div>
+                            <div class="tech-item" data-tooltip="Jetpack Compose">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jetpackcompose/jetpackcompose-original.svg" alt="Jetpack Compose">
+                            </div>
+                            <div class="tech-item" data-tooltip="Firebase">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skills-group">
-                    <h3>Languages</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">Kotlin</div>
-                        <div class="skill-item">XML</div>
-                        <div class="skill-item">SQL</div>
-                        <div class="skill-item">HTML/CSS</div>
-                    </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
                 </div>
-                
-                <div class="skills-group">
-                    <h3>Android Development</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">Android SDK</div>
-                        <div class="skill-item">Activities & Fragments</div>
-                        <div class="skill-item">Material Design</div>
-                        <div class="skill-item">Jetpack Components</div>
-                        <div class="skill-item">MVVM Architecture</div>
-                        <div class="skill-item">Room Database</div>
-                        <div class="skill-item">Retrofit</div>
-                        <div class="skill-item">Firebase</div>
-                    </div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-subtitle">Get to know me</div>
                 </div>
-                
-                <div class="skills-group">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">Android Studio</div>
-                        <div class="skill-item">Git</div>
-                        <div class="skill-item">GitHub</div>
-                        <div class="skill-item">Firebase Console</div>
-                        <div class="skill-item">Google Play Console</div>
-                        <div class="skill-item">Figma (Basics)</div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="image-frame">
+                            <img src="res\baby-boss.png" alt="About Me">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-title">Who am I?</h3>
+                        <p>I'm a passionate <span class="highlight">Android Developer</span> specializing in modern Android development with Kotlin and Jetpack Compose. I create pixel-perfect, high-performance mobile applications with clean architecture and intuitive user interfaces.</p>
+                        <p>With expertise in <span class="highlight">MVVM architecture</span>, dependency injection with <span class="highlight">Dagger Hilt</span>, and integrating REST APIs with <span class="highlight">Retrofit</span>, I build apps that are both beautiful and robust.</p>
+                        <div class="about-info">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Ravi Maurya</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Email:</span>
+                                <span class="info-value">ravithemauryas@example.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Experience:</span>
+                                <span class="info-value">1+ Years of Learning Experience</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">Thane, Maharashtra, India</span>
+                            </div>
+                        </div>
+                        <div class="about-buttons">
+                            <a href="res/Resume_Ravi.pdf" download="ravi_resume.pdf" class="btn btn-primary">
+                                <span>Download Resume</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Your Name">
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-subtitle">What I'm good at</div>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Your Email">
+                <div class="skills-grid">
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin">
+                            </div>
+                            <h3 class="skill-title">Kotlin Development</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Building Android applications using modern Kotlin features like coroutines, flows, and extension functions.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%">
+                                    <span class="progress-value">95%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://developer.android.com/static/images/jetpack/compose/logo-compose.svg" alt="Jetpack Compose">
+                            </div>
+                            <h3 class="skill-title">Jetpack Compose</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Creating beautiful, responsive UIs with Android's modern declarative UI toolkit.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%">
+                                    <span class="progress-value">90%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android">
+                            </div>
+                            <h3 class="skill-title">Android SDK</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Extensive experience with Android framework components and best practices.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%">
+                                    <span class="progress-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                            </div>
+                            <h3 class="skill-title">Firebase</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Implementing authentication, realtime databases, cloud functions and analytics.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%">
+                                    <span class="progress-value">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dagger/dagger-original.svg" alt="Dagger Hilt">
+                            </div>
+                            <h3 class="skill-title">Dagger Hilt</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Dependency injection implementation for scalable and testable applications.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%">
+                                    <span class="progress-value">75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card glass">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+                            </div>
+                            <h3 class="skill-title">SQLite & Room</h3>
+                        </div>
+                        <div class="skill-body">
+                            <p>Local data persistence solutions with Room database and SQLite.</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%">
+                                    <span class="progress-value">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" rows="5" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit">Send Message</button>
             </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <!-- Replace # with your actual links -->
-                <a href="#" target="_blank">GitHub</a>
-                <a href="#" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Twitter</a>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-subtitle">Featured work</div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project 1: EV Charging Finder -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="res/project1.png" alt="EV Charging Station Finder">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">EV Charging Finder</h3>
+                            <p class="project-description">An electric vehicle charging station locator with real-time availability, Google Maps integration, and route planning. Features QR code scanning for seamless payments at charging stations.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>Google Maps SDK</span>
+                                <span>Retrofit</span>
+                                <span>MVVM</span>
+                                <span>QR Scanner</span>
+                            </div>
+                            <a href="#" class="btn btn-small">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2: Auth App -->
+                    <div class="project-card glass">
+                        <div class="project-image">
+                            <img src="res/project2.jpg" alt="Authentication App">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Auth Flow App</h3>
+                            <p class="project-description">A complete authentication solution with Firebase, featuring splash screen, onboarding flow, login/register screens, and password recovery. Implemented with modern Android architecture components.</p>
+                            <div class="project-tech">
+                                <span>Kotlin</span>
+                                <span>Firebase Auth</span>
+                                <span>Jetpack Compose</span>
+                                <span>Navigation</span>
+                            </div>
+                            <a href="#" class="btn btn-small">
+                                <span>View Project</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
             </div>
-            <p>&copy; 2025 Ravi Maurya. All Rights Reserved.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-subtitle">Let's work together</div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info glass">
+                        <h3 class="contact-title">Contact Information</h3>
+                        <p>Feel free to reach out to me for any questions or opportunities. I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Email</span>
+                                    <a href="mailto:your.email@example.com">ravithemauryas@example.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Phone</span>
+                                    <a href="tel:+1234567890">+91 8452851548</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span>Location</span>
+                                    <span>Thane, Maharashtra, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <!-- github  -->
+                            <a href="https://github.com/Ravi123Maurya" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <!-- linkedin  -->
+                            <a href="https://www.linkedin.com/in/ravi-maurya-a956b12b2" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <form  action="https://formspree.io/f/mqabpdjz" method="POST" class="contact-form glass">
+                        <div class="form-group">
+                            <!-- name  -->
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- email  -->
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <!-- subject  -->
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <!-- message  -->
+                            <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+                        </div>
+                        <!-- submit button  -->
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">{"</>"}</span>
+                    <span class="logo-name">Ravi Maurya</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#skills" class="footer-link">Skills</a>
+                    <a href="#projects" class="footer-link">Projects</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Ravi123Maurya" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ravi-maurya-a956b12b2
+" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Ravi Maurya. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
